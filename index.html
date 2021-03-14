@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+            <div class="container-content-header">
+                <button class="container-content-header__delThisTodo btn">Delete this TODO</button>
+                <button class="container-content-header__addTodo btn">New TODO</button>
+                <button class="container-content-header__delAllTodo btn">Delete all TODO</button>
+            </div>
+
+            <div class="container-content-main">
+                <div class="container-content-main__TodoContainer">
+
+                </div>
+            </div>
+
+            <div class="container-content-footer">
+                <div class="footer-paginationContainer">
+                    <button class="footer__paginationArrow leftArrowOfPagination">&#8592</button>
+                    <button class="footer__paginationArrow rightArrowOfPagination">&#8594</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modalWindow">
+            <div class="modalWindow-container">
+                <div class="modalWindow-container__header">
+                    <input type="text" class="modalWindow__input-title" maxlength="35" placeholder="Title">
+                </div>
+                <div class="modalWindow-container__main">
+                    <textarea class="modalWindow__textarea" maxlength="700" placeholder="Text"></textarea>
+                </div>
+                <div class="modalWindow-container__footer">
+                    <button class="modalWindow-container__btn btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="index.js"></script>
+</html>
